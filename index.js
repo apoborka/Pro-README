@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import generateMarkdown from "./utils/generateMarkdown";
+import fs from 'fs';
+import { error } from "console";
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -55,7 +57,13 @@ inquirer
             name: 'email',
         }
     ])
-    .then((response) => console.log(response))
+    .then((data) => {
+        const fileName = `${data.projectName}.md`
+
+        fs.writeFile(fileName, JSON.stringify(data, null, '\t'), (err) =>
+            err ? console.log(err) : console.log('Your README has been generated successfully!')
+        );
+    });
 
 // --------------------------------------------------------------------------------
 
