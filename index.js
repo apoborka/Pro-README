@@ -3,6 +3,7 @@ import inquirer from "inquirer";
 import generateMarkdown from "./utils/generateMarkdown";
 import fs from 'fs';
 import { error } from "console";
+import colors from 'colors';
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -11,7 +12,7 @@ inquirer
     .prompt([
         {
             type: 'input',
-            message: 'What is the title of your project?',
+            message: colors.black.bgGreen('What is the title of your project?'),
             name: 'projectName',
         },
         {
@@ -59,16 +60,23 @@ inquirer
     ])
     .then((data) => {
         const fileName = `${data.projectName}.md`
-
-        fs.writeFile(fileName, JSON.stringify(data, null, '\t'), (err) =>
-            err ? console.log(err) : console.log('Your README has been generated successfully!')
-        );
+        const markdownContent = generateMarkdown(data);
+        
+        writeToFile(fileName, markdownContent);
     });
 
 // --------------------------------------------------------------------------------
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            console.log(colors.red(err));
+        } else {
+            console.log(colors.green('Your README has been generated successfully!'));
+        }
+    });
+};
 
 // TODO: Create a function to initialize app
 function init() {}
