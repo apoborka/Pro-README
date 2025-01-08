@@ -32,4 +32,7 @@
 ##### For any questions regarding this project, contact the project owner via: 
   GitHub: [apoborka](https://github.com/apoborka)
   Email: alex.poborka@example.com
+
+  ## Acknowledgments
+  This project utilized Xpert Learning Assistant, an AI learning tool provided by EdX.
   
