@@ -9,28 +9,50 @@ inquirer
     .prompt([
         {
             type: 'input',
-            message: 'Please input the title of your project.',
+            message: 'What is the title of your project?',
             name: 'projectName',
         },
         {
             type: 'input',
-            message: 'Please input your user story. (AS A userDescription, I WANT issueResolution, SO THAT resolutionReason.)',
-            name: 'userStory',
+            message: 'Please provide a brief description of your project.',
+            name: 'description',
         },
         {
             type: 'input',
-            message: 'Please input your acceptance criteria for the completed project.',
-            name: 'acceptanceCriteria',
-        },
-        {
-            type: 'input',
-            message: 'Please input the steps required to run the application.',
+            message: 'Please provide any installation instructions you wish to include.',
             name: 'gettingStarted',
         },
         {
             type: 'input',
-            message: "Please input the project's licensing information.",
+            message: "Please provide any usage instructions you wish to include.",
             name: 'license',
+        },
+        {
+            type: 'input',
+            message: 'Please provide any information related to how users might contribute to this project.',
+            name: 'contributing',
+        },
+        {
+            type: 'input',
+            message: 'Please provide any instructions for running tests.',
+            name: 'tests',
+        },
+        // THIS PROMPT NEEDS TO PROVIDE A LIST OF LICENSES TO SELECT FROM
+        {
+            type: 'list',
+            message: 'Which license do you wish to publish this project under?',
+            name: 'licenseSelection',
+            choices: ['MIT', 'Apache 2.0', 'BSD 3', 'BSD 2', 'GPL', 'Mozilla Public License', 'CDDL'],
+        },
+        {
+            type: 'input',
+            message: 'Please provide your GitHub username.',
+            name: 'githubUsername',
+        },
+        {
+            type: 'input',
+            message: 'Please provide your email address for questions.',
+            name: 'email',
         }
     ])
     .then((response) => console.log(response))
