@@ -19,17 +19,17 @@
   - [Questions](#questions)
 
   ## Installation
-  I.) Clone the repository.
-  II.) Run 'npm install' in the terminal to install dependencies (inquirer, colors).
+  I.) Clone the repository.\
+  II.) Run 'npm install' in the terminal to install dependencies (inquirer, colors).\
   III.) Run 'node index.js' in the terminal to initialize the application.
 
   ## Usage
   [Tutorial Video]()
 
-  For proper use, please note the following:
-  a.) Your project title will be the file name of the generated README file.
-  b.) When selecting a license, use the arrow and enter keys to submit your selection.
-  c.) Use correct formatting when inputting your email address.
+  For proper use, please note the following:\
+  a.) Your project title will be the file name of the generated README file.\
+  b.) When selecting a license, use the arrow and enter keys to submit your selection.\
+  c.) Use correct formatting when inputting your email address.\
   d.) Your generated README file will be located in the root directory.
 
   ## License
