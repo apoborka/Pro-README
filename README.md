@@ -24,7 +24,7 @@
   III.) Run 'node index.js' in the terminal to initialize the application.
 
   ## Usage
-  [Tutorial Video]()
+  [Tutorial Video](https://drive.google.com/file/d/1DSb4hek_ddK8iOcb8NiVpPRP4THKHsjz/view?usp=sharing)
 
   For proper use, please note the following:\
   a.) Your project title will be the file name of the generated README file.\

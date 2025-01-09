@@ -1,9 +1,9 @@
 
   # My Project
-   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Description
-  Here is a brief description of my project.
+  A brief description
 
   ## Table of Contents
   - [Installation](#installation)
@@ -14,19 +14,19 @@
   - [Questions](#questions)
 
   ## Installation
-  Here are installation instructions.
+  Install instructions
 
   ## Usage
-  Here are usage instructions.
+  Usage instructions
 
   ## License
-  This project is licensed under the Apache 2.0 license. For more details, see the license link: (https://opensource.org/licenses/Apache-2.0)
+  This project is licensed under the MIT license. For more details, see the license link: (https://opensource.org/licenses/MIT)
 
   ## Contributing
-  Here is information regarding how to contribute to this project.
+  Please don't
 
   ## Tests
-  Here are instructions for running tests.
+  No tests
 
   ## Questions
 ##### For any questions regarding this project, contact the project owner via: 
