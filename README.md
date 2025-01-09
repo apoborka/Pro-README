@@ -43,7 +43,7 @@
 
   ## Questions
 ##### For any questions regarding this project, contact the project owner via: 
-  GitHub: [apoborka](https://github.com/apoborka)
+  GitHub: [apoborka](https://github.com/apoborka)\
   Email: alex.poborka@example.com
 
   ## Acknowledgments
